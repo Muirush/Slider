@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+     android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Welcome"
+            android:id="@+id/test"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/main_image"
+            android:src="@drawable/add"
+            android:layout_marginBottom="16dp"
+            android:onClick="Dialog"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_image"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:weightSum="4"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/text"
+                android:layout_weight="2"/>
+            <View
+                android:layout_width="20dp"
+
+                android:layout_height="match_parent"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_weight="2"
+                android:layout_marginRight="16dp"
+                app:cornerRadius="5dp"
+                android:id="@+id/button"
+                app:backgroundTint="@color/cardview_dark_background"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
